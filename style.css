@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-weight: 300;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+  }
+  
+  nav {
+    box-shadow: 5px 5px 5px;
+    position: relative;
+    top: 0;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 10px;
+    z-index: 999;
+  }
+  
+  .logo-container img {
+    width: 100px;
+  }
+  
+  .hero-img img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+  }
+  
+  .solar-panels {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+  }
+  
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+  
+  .navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-section ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+  }
+  
+  .nav-section li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .nav-section li a:hover {
+    color: rgb(85, 195, 68);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .subtitle {
+    color: green;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-contant {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .tag {
+    background-color: #137205;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: #3ff0db;
+    font-weight: 600;
+    letter-spacing: 2px;
+    align-self: flex-start;
+  }
+  
+  .tag:hover {
+    background-color: rgb(85, 195, 68);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .hero-contant h1 {
+    font-size: 75px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  
+  .explore_btn {
+    background: #137205;
+    align-self: flex-start;
+  }
+  
+  .explore {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .features {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: justify;
+  }
+  
+  .feature img {
+    width: 200px;
+    height: 200px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .feature::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #137205;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+    transform-origin: center;
+  }
+  
+  .footer-container {
+    height: 100px;
+  }
+  
+  .footer-text {
+    align-self: center;
+  }
+  
+  .line {
+    border: 1px solid rgb(204, 204, 204);
+    margin-bottom: 10px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 10px 0px;
+    align-items: center;
+  }
+  
+  .menu .tag {
+    align-self: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+  }
+  
+  .grid img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .grid div {
+    transition: 0.5s;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .grid div::after {
+    content: "Money you want to invest";
+    position: absolute;
+    font-size: large;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #137205;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+    transform-origin: center;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  #savings-result {
+    font-size: 24px;
+    margin-top: 20px;
+    color: red;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero {
+      gap: 50px;
+    }
+  
+    .hero-contant {
+      align-items: center;
+    }
+  
+    .features {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .img1 {
+      height: auto;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .navigation-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-section ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img1 {
+      height: auto;
+      width: 100%;
+    }
+  }
+  
